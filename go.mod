@@ -1,7 +1,6 @@
 module sigs.k8s.io/scheduler-library
 
 go 1.26.0
-toolchain go1.26.0
 
 tool (
 	github.com/golangci/golangci-lint/v2/cmd/golangci-lint
