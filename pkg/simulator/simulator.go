@@ -46,6 +46,7 @@ type Simulator interface {
 	// CanSchedulePod reports which of the nodes in the placement fit a single pod, leaving the
 	// snapshot untouched. The returned *schedFwk.Diagnosis explains why the remaining nodes were
 	// rejected.
+        // Not important
 	CanSchedulePod(ctx context.Context, pod *v1.Pod, placement *fwk.Placement) ([]string, *schedFwk.Diagnosis, error)
 
 	// SchedulePods schedules the given pods one by one onto the placement and, unless opts.DryRun is
